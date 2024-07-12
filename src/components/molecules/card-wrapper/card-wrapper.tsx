@@ -22,7 +22,7 @@ const CardWrapper = ({ children, pokemonId, pokemonName }: Props) => {
       aria-label={`${pokemonName}, ID: ${padId(Number(pokemonId))}`}
       href={`${HOME_PAGE_ROUTE}/${pokemonName}/${pokemonId}`}
       passHref
-      className='w-[97%] rounded-md'
+      className='w-[97%] rounded-md flex justify-center'
       onClick={handleClick}
     >
       {children}
