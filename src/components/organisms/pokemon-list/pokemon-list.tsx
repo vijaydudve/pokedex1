@@ -57,7 +57,7 @@ export default async function PokemonList({ searchParams }: Props) {
 
         return (
             <>
-                <div className="max-w-screen-xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-8 py-10">
+                <div className="max-w-screen-xl mx-auto grid grid-cols-2 -ml-1 pr-5 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-8 py-10">
                     {filteredPokemons.map((pokemon: any) => (
                         <CardWrapper key={pokemon.id} pokemonId={pokemon.id} pokemonName={pokemon?.name}>
                             <Card key={pokemon.id} imgWidth={100} imgHeight={100} cardHeight="h-60" cardWidth="w-40" pokemon={pokemon} />
